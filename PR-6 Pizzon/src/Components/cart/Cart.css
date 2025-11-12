@@ -1,0 +1,51 @@
+/* Wrapper for input + button */
+.coupon-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Input field */
+.coupon-input {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  min-width: 220px;
+  font-size: 15px;
+  color: #555;
+}
+
+/* Apply Coupon button */
+.coupon-btn {
+  background: #fbb100; /* orange-yellow */
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.coupon-btn:hover {
+  background: #e09a00;
+}
+
+/* Update Cart button */
+.update-btn,.proceed-btn {
+  background: #fbb100;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 40px; /* space between */
+  transition: 0.3s ease;
+}
+
+.update-btn:hover {
+  background: #e09a00;
+}

@@ -1,0 +1,31 @@
+{
+  "mens": [
+    {
+      "id": "927354",
+      "p_name": "kdwj",
+      "description": "oiuui",
+      "brand": "iufhuiy",
+      "price": "244",
+      "quantity": "2454",
+      "category": "Formal Shirts",
+      "size": [
+        "XS"
+      ],
+      "p_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQRIeRx5ZUq13jYnwKjks8ZehiHvRwqTRGpET-eS9mI-e724u_fa_2OuV8YXfGfCmKmkDy3fV6MxGCPInIq-AhX1rwZ_OqjzyM5-GpbFwuk7LpZHy_LCRujtQ"
+    },
+    {
+      "id": "572718",
+      "p_name": "2KOU",
+      "description": "OIUFQWI",
+      "brand": "KJIUDQW",
+      "price": "878",
+      "quantity": "454",
+      "category": "Casual Shirts",
+      "size": [
+        "XS",
+        "S"
+      ],
+      "p_image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQcUY3rK0eTUYPjQ12tp4Zz4Ym3kiGaq10cDvVPwIUeE-nAbnjmawV9f-W9u-8hOUjhfHUBK3FuQLBlPB5JVc5VjWhq6hUxPqmjecNSeaAtZQLSqKdZFKCLPxE"
+    }
+  ]
+}

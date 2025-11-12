@@ -1,0 +1,22 @@
+{
+  "mens": [
+    {
+      "id": "160415",
+      "p_name": "Calvin KleinYellow Tshirt",
+      "description": "Calvin Klein Yellow T-shirt Round Neck",
+      "brand": "Calvin Klein",
+      "price": "800",
+      "quantity": "1000",
+      "category": "T-shirts",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "p_image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSiKEdUmVi5FWl5BoKByQ0vIN4UA8e2ESnjkWkPmK7-VwvcW8USRtX_q5hiWaSrbqO7TvBAuD8IbRTGRDNRoXEN1OJT_Iu2ZYvtxWS9pM4"
+    }
+  ]
+}

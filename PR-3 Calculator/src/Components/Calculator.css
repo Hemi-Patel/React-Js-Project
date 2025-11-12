@@ -1,0 +1,55 @@
+.main {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-style {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    border: 3px solid orangered;
+    color: white;
+    border-radius: 25px;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.input-box input {
+    
+    width: 95%;
+    height: 60px;
+    border-radius: 10px;
+    top: 0;
+    background-color: rgb(223, 207, 200);
+    font-size: 48px;
+    font-weight: 500;
+    text-align: end;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+}
+
+.btnStyle {
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    border: 1px solid orangered;
+    background-color: black;
+    color: rgb(227, 219, 216);
+}
