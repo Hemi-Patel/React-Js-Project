@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router";
-import { signInUserAsync, signUpUserAsync } from "../../Services/Action/authentcationAction";
+import { signInGoogleAsync, signInUserAsync, signUpUserAsync } from "../../Services/Action/authentcationAction";
+import { FaGoogle } from "react-icons/fa";
 
 const SignIn = () => {
     const initialState = {
@@ -28,7 +29,7 @@ const SignIn = () => {
         if (!inputForm.email.trim())
             newErrors.email = "email is required.";
         if (!inputForm.password.trim())
-            newErrors.password = "passwordrequired.";
+            newErrors.password = "password required.";
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -43,6 +44,9 @@ const SignIn = () => {
             dispatch(signInUserAsync(newUser));
         }
     };
+    const handleGoogleSignIn = ()=>{
+        dispatch(signInGoogleAsync())
+    }
     useEffect(() => {
         if (user) {
             navigate("/")
@@ -106,6 +110,9 @@ const SignIn = () => {
                             <Button variant="danger" type="submit" className="px-5 py-2 rounded-3">
                                 Sign In
                             </Button>
+
+                            <Button  variant="danger" className="mx-2 px-3 py-2 rounded-3"  onClick={handleGoogleSignIn} > Sign In With Google</Button>
+
                             <p className="pt-3">You Don't have Account? Please <Link to="/signUp" style={{ color: "blue", textDecoration: "underline" }} >SignUp</Link></p>
                         </div>
                     </Form>

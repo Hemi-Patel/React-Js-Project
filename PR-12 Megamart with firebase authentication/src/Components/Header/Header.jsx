@@ -39,7 +39,7 @@ const Header = () => {
 
                         <div className="d-flex align-items-center gap-3 ms-3">
                             <CiLocationOn className="fs-4" />
-                            <CiUser className="fs-4" />
+                            <CiUser className="fs-4" /> {user ? <p className="pt-3">{user.email}</p> : ""}
                             <CiHeart className="fs-4" />
                             <IoBagAddOutline className="fs-4" />
 
