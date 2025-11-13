@@ -4,6 +4,7 @@ import { Button, Col, Container, Form, Row, Card } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router";
 import { editProductsAsync, getProductAsync } from "../../Services/Action/productAction";
+import uploadImage from "../../Services/UploadeImage";
 
 const EditProduct = () => {
     const initialState = {
@@ -36,6 +37,13 @@ const EditProduct = () => {
             setInputForm({ ...inputForm, [name]: value })
         }
     }
+      const handleUploadImage = async (e) => {
+            let imageUrl = await uploadImage(e.target.files[0]);
+            setInputForm({
+                ...inputForm,
+                p_image: `${imageUrl}`
+            });
+        }
     useEffect(() => {
         dispatch(getProductAsync(id))
     }, [id])
@@ -218,12 +226,10 @@ const EditProduct = () => {
                             </Form.Label>
                             <Col sm="8">
                                 <Form.Control
-                                    type="text"
+                                    type="file"
                                     name="p_image"
-                                    value={inputForm.p_image}
-                                    placeholder="Enter Image URL"
                                     className="shadow-none"
-                                    onChange={handleInput}
+                                    onChange={handleUploadImage}
                                 />
                             </Col>
                         </Form.Group>
